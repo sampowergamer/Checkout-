@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Depósito SAMTECBANK - TRX</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Depósito SAMTECBANK</h1>
+    <p>Digite o valor em reais (R$):</p>
+    <input type="number" id="amount" placeholder="Ex: 10.00" min="5" max="40"/>
+    <button onclick="createPayment()">Pagar com TRX</button>
+    <div id="payment-box" class="hidden">
+      <p><strong>Valor em TRX:</strong> <span id="trx-amount"></span></p>
+      <p><strong>Status:</strong> <span id="status">Aguardando...</span></p>
+      <div id="qr-code"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
